@@ -1,0 +1,326 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <data>
+        <variable
+            name="profile"
+            type="online.ghuri.com.beacondoctorapp.Profile.Repository.User"/>
+    </data>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="online.ghuri.com.beacondoctorapp.Profile.ViewModel.ProfileDisplayFragment">
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_background"
+        app:layout_constraintBottom_toTopOf="@id/pic_bottom_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:elevation="10dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_color="#fff"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toTopOf="@id/middle_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="123dp" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/user_qualificaiont_card_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@id/middle_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_begin_guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/doc_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@{profile.profile.desig+' '+profile.name}"
+                android:hint="Desig Name"
+                android:background="@color/transparent"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/degree_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@{profile.profile.degree}"
+                android:textSize="20sp"
+                android:hint="Degree"
+                android:background="@color/transparent"
+
+                />
+
+            <EditText
+                android:id="@+id/dep_instit_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:hint="Department,Institute"
+                android:text='@{profile.profile.dept+", "+profile.profile.inst}'
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:background="@color/transparent"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:elevation="5dp"
+        android:id="@+id/user_personal_info_card_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middle_guideline">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/chamber_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_home_black_36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chamber_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Chamber"
+                app:layout_constraintStart_toEndOf="@id/chamber_image_view"
+                app:layout_constraintTop_toTopOf="@id/chamber_image_view" />
+
+            <EditText
+                android:background="@color/transparent"
+                android:id="@+id/chamber1_tv"
+                android:hint="First Chamber Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@{profile.profile.chambera}"
+                app:layout_constraintStart_toEndOf="@id/chamber_image_view"
+                app:layout_constraintTop_toBottomOf="@id/chamber_title_text_view"
+                android:textStyle="bold"/>
+            <EditText
+                android:background="@color/transparent"
+                android:id="@+id/chamber2_tv"
+                android:hint="Second Chamber Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@{profile.profile.chamberb}"
+                app:layout_constraintStart_toEndOf="@id/chamber_image_view"
+                app:layout_constraintTop_toBottomOf="@id/chamber1_tv"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/contact_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_import_contacts_black_36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chamber2_tv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:layout_marginStart="24dp"
+                app:layout_constraintTop_toTopOf="@id/contact_pic"
+                app:layout_constraintStart_toEndOf="@id/contact_pic"
+                android:id="@+id/contact_title"
+                />
+
+
+
+            <EditText
+                android:background="@color/transparent"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:id="@+id/email_result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{profile.email}"
+                app:layout_constraintStart_toStartOf="@id/contact_title"
+                app:layout_constraintTop_toBottomOf="@id/contact_title"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:background="@color/transparent"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:id="@+id/phone_number_result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{profile.mobile}"
+                app:layout_constraintStart_toStartOf="@id/contact_title"
+                app:layout_constraintTop_toBottomOf="@id/email_result_tv"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:background="@color/transparent"
+                android:hint="Facebook Link"
+                android:id="@+id/fb_result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{profile.profile.fb}"
+                app:layout_constraintStart_toStartOf="@id/contact_title"
+                app:layout_constraintTop_toBottomOf="@id/phone_number_result_tv"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/personal_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_person_black_36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fb_result_tv" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal"
+                android:layout_marginStart="24dp"
+                app:layout_constraintTop_toTopOf="@id/personal_image_view"
+                app:layout_constraintStart_toEndOf="@id/personal_image_view"
+                android:id="@+id/personal_info_title"
+                />
+
+            <EditText
+            android:background="@color/transparent"
+            android:hint="Birthdate"
+                android:id="@+id/birthday_result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{"Birth Date: " +profile.birth}'
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/personal_info_title"
+                app:layout_constraintTop_toBottomOf="@+id/personal_info_title" />
+
+            <EditText
+                android:background="@color/transparent"
+                android:hint="Marriage Day"
+                android:id="@+id/marriage_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{"Marriage Day: " +profile.profile.marr}'
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/birthday_result_tv"
+                app:layout_constraintTop_toBottomOf="@+id/birthday_result_tv" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/pic_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/card_begin_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/middle_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <ImageButton
+        android:background="@color/transparent"
+        android:id="@+id/setting_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_settings_white_36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_arrow_back_white_36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+</layout>

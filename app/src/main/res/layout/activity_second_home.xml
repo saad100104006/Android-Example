@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="online.ghuri.com.beacondoctorapp.SecondHomeActivity">
+
+    <ImageButton
+        android:id="@+id/flexibac_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/categories_2"
+        app:layout_constraintBottom_toTopOf="@+id/medical_dictionary_image_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/categories_1"
+        app:layout_constraintBottom_toTopOf="@+id/journal_image_btn"
+        app:layout_constraintEnd_toStartOf="@+id/flexibac_image_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/journal_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+
+        android:background="@drawable/categories_3"
+        app:layout_constraintBottom_toTopOf="@+id/gb_image_btn"
+        app:layout_constraintEnd_toStartOf="@+id/medical_dictionary_image_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <ImageButton
+        android:id="@+id/medical_dictionary_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+
+        android:background="@drawable/categories_4"
+        app:layout_constraintBottom_toTopOf="@+id/help_image_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/journal_image_btn"
+        app:layout_constraintTop_toBottomOf="@+id/flexibac_image_btn" />
+
+    <ImageButton
+        android:id="@+id/gb_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+
+        android:background="@drawable/categories_5"
+        app:layout_constraintBottom_toTopOf="@+id/about_image_btn"
+        app:layout_constraintEnd_toStartOf="@+id/help_image_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/journal_image_btn" />
+
+    <ImageButton
+        android:id="@+id/help_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+
+        android:background="@drawable/categories_6"
+        app:layout_constraintBottom_toTopOf="@+id/logout_image_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gb_image_btn"
+        app:layout_constraintTop_toBottomOf="@+id/medical_dictionary_image_btn" />
+
+
+    <ImageButton
+        android:id="@+id/about_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+
+        android:background="@drawable/categories_7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/logout_image_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gb_image_btn" />
+
+    <ImageButton
+        android:id="@+id/logout_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+
+        android:background="@drawable/categories_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/about_image_btn"
+        app:layout_constraintTop_toBottomOf="@+id/help_image_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="My Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Journal"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/journal_image_btn"
+        app:layout_constraintEnd_toEndOf="@+id/journal_image_btn"
+        app:layout_constraintStart_toStartOf="@+id/journal_image_btn"
+        app:layout_constraintTop_toTopOf="@+id/journal_image_btn" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="  Medical\nDictionary"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/medical_dictionary_image_btn"
+        app:layout_constraintEnd_toEndOf="@+id/medical_dictionary_image_btn"
+        app:layout_constraintStart_toStartOf="@+id/medical_dictionary_image_btn"
+        app:layout_constraintTop_toTopOf="@+id/medical_dictionary_image_btn" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Generic\n  Brand"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gb_image_btn"
+        app:layout_constraintEnd_toEndOf="@+id/gb_image_btn"
+        app:layout_constraintStart_toStartOf="@+id/gb_image_btn"
+        app:layout_constraintTop_toTopOf="@+id/gb_image_btn" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Help Centre"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/help_image_btn"
+        app:layout_constraintEnd_toEndOf="@+id/help_image_btn"
+        app:layout_constraintStart_toStartOf="@+id/help_image_btn"
+        app:layout_constraintTop_toTopOf="@+id/help_image_btn" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="About"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/about_image_btn"
+        app:layout_constraintEnd_toEndOf="@+id/about_image_btn"
+        app:layout_constraintStart_toStartOf="@+id/about_image_btn"
+        app:layout_constraintTop_toTopOf="@+id/about_image_btn" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Log Out"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/logout_image_btn"
+        app:layout_constraintEnd_toEndOf="@+id/logout_image_btn"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/logout_image_btn"
+        app:layout_constraintTop_toTopOf="@+id/logout_image_btn" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/flexibac_image_btn"
+        app:layout_constraintEnd_toEndOf="@+id/flexibac_image_btn"
+        app:layout_constraintStart_toStartOf="@+id/flexibac_image_btn"
+        app:layout_constraintTop_toTopOf="@+id/flexibac_image_btn"
+        app:srcCompat="@drawable/logo" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+</layout>

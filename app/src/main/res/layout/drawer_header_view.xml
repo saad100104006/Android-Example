@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d82fb"
+    android:paddingTop="32dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/profile_image_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Prof.Dr.N K Datta"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/profile_image_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/profile_image_circle_image_view" />
+
+    <TextView
+        android:id="@+id/profile_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Head of department"
+        android:textColor="@color/text_color"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@id/profile_image_circle_image_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_text1" />
+
+    <View
+        android:id="@+id/first_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_circle_image_view" />
+
+    <View
+        android:id="@+id/profile_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/first_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/flexibac_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/flexibac"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_circle_image_view" />
+
+    <TextView
+        android:id="@+id/flexibac_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Flexibac"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/flexibac_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/flexibac_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/flexibac_circle_image_view" />
+
+
+    <View
+        android:id="@+id/second_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flexibac_circle_image_view" />
+
+
+    <View
+        android:id="@+id/flexibac_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/first_view"
+        app:layout_constraintBottom_toTopOf="@+id/second_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/journal_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/journal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flexibac_circle_image_view" />
+
+    <TextView
+        android:id="@+id/journal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Journal"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/journal_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/journal_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/journal_circle_image_view" />
+
+    <View
+        android:id="@+id/third_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/journal_circle_image_view" />
+
+
+    <View
+        android:id="@+id/journal_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/second_view"
+        app:layout_constraintBottom_toTopOf="@+id/third_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:visibility="gone"
+        android:id="@+id/conference_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/conference_news"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/journal_circle_image_view" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/conference_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Conference News"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/conference_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/conference_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/conference_circle_image_view" />
+
+    <View
+        android:id="@+id/fourth_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conference_circle_image_view" />
+
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/conference_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/third_view"
+        app:layout_constraintBottom_toTopOf="@+id/fourth_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+android:visibility="gone"
+        android:id="@+id/website_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/www_flexibac_com_bd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conference_circle_image_view" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/website_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="www.flexibac.com.bd"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/website_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/website_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/website_circle_image_view" />
+
+    <View
+        android:id="@+id/fifth_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/website_circle_image_view" />
+
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/website_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/fourth_view"
+        app:layout_constraintBottom_toTopOf="@+id/fifth_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+android:visibility="gone"
+        android:id="@+id/news_paper_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/news_paper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/website_circle_image_view" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/news_paper_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="News Paper"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/news_paper_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/news_paper_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/news_paper_circle_image_view" />
+
+    <View
+        android:id="@+id/six_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_paper_circle_image_view" />
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/news_paper_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/fifth_view"
+        app:layout_constraintBottom_toTopOf="@+id/six_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:visibility="gone"
+        android:id="@+id/current_affair_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/current_affairs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_paper_circle_image_view" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/current_affair_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Currrent Affairs"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/current_affair_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/current_affair_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/current_affair_circle_image_view" />
+
+    <View
+        android:id="@+id/sevent_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_affair_circle_image_view" />
+
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/current_affair_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/six_view"
+        app:layout_constraintBottom_toTopOf="@+id/sevent_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/dictionary_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/medical_dictionary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_affair_circle_image_view" />
+
+    <TextView
+        android:id="@+id/dictionary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Medical Dictionary"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dictionary_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/dictionary_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/dictionary_circle_image_view" />
+
+    <View
+        android:id="@+id/eight_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dictionary_circle_image_view" />
+
+
+    <View
+        android:id="@+id/dictionary_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/sevent_view"
+        app:layout_constraintBottom_toTopOf="@+id/eight_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/generic_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/generci_brand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dictionary_circle_image_view" />
+
+    <TextView
+        android:id="@+id/generic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Generic And Brand"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/generic_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/generic_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/generic_circle_image_view" />
+
+    <View
+        android:id="@+id/nine_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generic_circle_image_view" />
+
+    <View
+        android:id="@+id/generic_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/eight_view"
+        app:layout_constraintBottom_toTopOf="@+id/nine_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/help_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/help_centre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generic_circle_image_view" />
+
+    <TextView
+        android:id="@+id/help_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Help Centre"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/help_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/help_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/help_circle_image_view" />
+
+    <View
+        android:id="@+id/ten_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_circle_image_view" />
+
+    <View
+        android:id="@+id/help_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/nine_view"
+        app:layout_constraintBottom_toTopOf="@+id/ten_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/about_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/about"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_circle_image_view" />
+
+    <TextView
+        android:id="@+id/about_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="About"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/about_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/about_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/about_circle_image_view" />
+
+    <View
+        android:id="@+id/eleven_view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_circle_image_view" />
+
+    <View
+        android:id="@+id/about_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/ten_view"
+        app:layout_constraintBottom_toTopOf="@+id/eleven_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/log_out_circle_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/log_out"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_circle_image_view" />
+
+    <TextView
+        android:id="@+id/log_out_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Log Out"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/log_out_circle_image_view"
+        app:layout_constraintStart_toEndOf="@id/log_out_circle_image_view"
+        app:layout_constraintTop_toTopOf="@id/log_out_circle_image_view" />
+
+
+    <View
+        android:id="@+id/log_out_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/eleven_view"
+        app:layout_constraintBottom_toBottomOf="@+id/log_out_circle_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+</layout>

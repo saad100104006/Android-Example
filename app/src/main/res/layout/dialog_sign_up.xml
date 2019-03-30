@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/headline_textview"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        app:autoSizeTextType="uniform"
+        android:layout_marginTop="16dp"
+
+        android:text="Create a new account "
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@id/guideline_headline_right"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@id/guideline_headline_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title_two"
+        app:autoSizeTextType="uniform"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="cursive"
+        android:text="It's free and always will be..."
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@id/guideline_headline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_headline_left"
+        app:layout_constraintTop_toBottomOf="@+id/headline_textview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/title_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <Spinner
+                android:layout_weight="0.15"
+                android:id="@+id/mr_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#fff"
+                android:layout_marginRight="8dp"
+
+                android:background="@drawable/bg_spinner"/>
+
+
+
+
+            <EditText
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/full_name_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_design"
+                android:gravity="center"
+                android:hint="Full Name"
+                android:inputType="textPersonName"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_design"
+            android:gravity="center"
+            android:hint="Email Address"
+
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/mobile_no_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_design"
+            android:gravity="center"
+            android:hint="Mobile Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_design"
+            android:gravity="center"
+            android:hint="New Password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.15"
+                android:background="@drawable/edit_text_design"
+                android:text="Birthday"
+                android:textAllCaps="false" />
+
+            <Spinner
+
+                android:id="@+id/day_spiiner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/bg_spinner"
+                android:gravity="left"
+
+                android:textColor="#fff" />
+
+
+            <Spinner
+
+                android:id="@+id/month_spiiner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_spinner"
+
+                android:textColor="#fff" />
+
+            <Spinner
+
+                android:id="@+id/year_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+
+                android:layout_weight="2.5"
+                android:background="@drawable/bg_spinner"
+
+                android:textColor="#fff" />
+
+
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/bmdc_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_design"
+            android:gravity="center"
+            android:hint="BMDC Registration No." />
+
+        <Button
+            android:id="@+id/create_account_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/create_account_design"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_headline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_headline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7858881" />
+
+
+</android.support.constraint.ConstraintLayout>
+

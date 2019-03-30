@@ -1,0 +1,67 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="online.ghuri.com.beacondoctorapp.HelpCenterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/full_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#dddddd"
+            android:gravity="center"
+            android:hint="Full Name"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#dddddd"
+            android:gravity="center"
+            android:hint="Email Address"
+
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#dddddd"
+            android:gravity="center"
+            android:hint="Chamber Address"
+            android:inputType="textPostalAddress"/>
+
+        <EditText
+            android:id="@+id/chamber_address_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#dddddd"
+            android:gravity="top|center"
+            android:hint="Query/Comments"
+
+            android:inputType="textEmailAddress"/>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="#f37234"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+
+</layout>
